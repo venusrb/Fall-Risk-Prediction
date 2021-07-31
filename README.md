@@ -8,6 +8,7 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 - Data Collection
 
+
 - Machine Learning Application
   - Data Preprocessing
   - 1D Convolutional Neural Network
@@ -22,8 +23,6 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ### Discussion
 
 
-
-### Visualization
 
 
 ### Requirements
