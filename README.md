@@ -21,6 +21,11 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
    - Logistic Regression
 
 ## Data Colection
+### Population
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gender-Distribution.png)
+
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Weight-Height-Distribution.png)
+
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Angular%20velocity.png)
 
@@ -30,7 +35,7 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 
 ### 1D Convolutional Neural Network
-![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN Diagram.png)
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN-Diagram.png)
 
 ### Support Vector Machine
 
