@@ -59,6 +59,8 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ### Time-Frequency Representation
 #### 2D Convolutional Neural Network
 
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20AUC.png)
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20SE.png)
 ### Temporal Gait Features
 #### Logistic Regression
 
