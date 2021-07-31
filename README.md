@@ -47,7 +47,7 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 .
 
 ### Classification Results
-![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%signals%-%Molde%comparison%(a).png)
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20Molde%20comparison%20(a).png)
 
 
 ## Feature Representation
