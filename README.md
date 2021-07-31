@@ -30,15 +30,20 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Angular%20velocity.png)
 
 ## Machine Learning Application
+.
 
 ### Data Preprocessing
-
+.
+.
+.
 
 ### 1D Convolutional Neural Network
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN-Diagram.png)
 
 ### Support Vector Machine
+.
 
+### Classification Results
 
 
 ## Feature Representation
