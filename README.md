@@ -22,10 +22,26 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 ## Data Colection
 
+
 ## Machine Learning Application
+
 ### Data Preprocessing
+
 ### 1D Convolutional Neural Network
+
 ### Support Vector Machine
+
+
+
+## Feature Representation
+
+### Time-Frequency Representation
+#### 2D Convolutional Neural Network
+
+### Temporal Gait Features
+#### Logistic Regression
+
+
 
 ## Discussion
 
@@ -33,6 +49,8 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 
 ## Requirements
+
+
 
 
 ## Installation
