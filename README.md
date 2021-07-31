@@ -7,7 +7,9 @@ This is a repository for a fall risk prediction project. I propose a machine lea
 This project includes 4 main tasks: data collection and aquisition, statistical analysis, machine learning application, and feature representation. The implemntation Python code, the results and conclusions of each task are disscussed and they are illustrated with some visualization.
 
 - Data Collection
-<a href="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures"><img src="http://url.to/Neck%20Original%20Acceleration.png" align="left" height="480" width="400" ></a>
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png)
+![My image]<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png" width="120" height="100">
+%<a href="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures"><img src="http://url.to/Neck%20Original%20Acceleration.png" align="left" height="480" width="400" ></a>
 
 - Machine Learning Application
   - Data Preprocessing
