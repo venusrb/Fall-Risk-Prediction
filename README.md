@@ -8,8 +8,8 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 - Data Collection
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png)
-![My image]<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png" width="120" height="100">
-%<a href="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures"><img src="http://url.to/Neck%20Original%20Acceleration.png" align="left" height="480" width="400" ></a>
+![My image]<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png" width="790" height="600">
+
 
 - Machine Learning Application
   - Data Preprocessing
