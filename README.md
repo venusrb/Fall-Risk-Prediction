@@ -8,6 +8,7 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 - Data Collection
 - Machine Learning Application
+- - Data Preprocessing
 - Feature Representation
 
 ### Discussion
