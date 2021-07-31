@@ -7,9 +7,17 @@ This is a repository for a fall risk prediction project. I propose a machine lea
 This project includes 4 main tasks: data collection and aquisition, statistical analysis, machine learning application, and feature representation. The implemntation Python code, the results and conclusions of each task are disscussed and they are illustrated with some visualization.
 
 - Data Collection
+
 - Machine Learning Application
   - Data Preprocessing
+  - 1D Convolutional Neural Network
+  - Support Vector Machine
+
 - Feature Representation
+  - Time-Frequency Representation
+   - 2D Convolutional Neural Network
+  - Temporal Gait Features
+   - Logistic Regression
 
 ### Discussion
 
