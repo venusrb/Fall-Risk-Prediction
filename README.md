@@ -25,8 +25,6 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ### Population
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gender-Distribution.png)
 
-![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/gait-event-illustration.png)
-
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Weight-Height-Distribution.png)
 
 
@@ -68,11 +66,12 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 #### Detection of Gait Events
 
-
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection.PNG)
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/gait-event-illustration.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection%20with%20illustration.PNG)
-#### Temporal Gait Features
 
+#### Temporal Gait Features
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-illustration.png)
 
 #### Logistic Regression
 
