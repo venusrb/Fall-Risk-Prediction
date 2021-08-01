@@ -54,6 +54,12 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20AUC%20comparison.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20F1%20comparison.png)
 
+### Grad CAM Visualization
+
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Faller%20grad%20cam%20heatmap.JPG)
+
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Non-Faller%20grad%20cam%20heatmap.JPG)
+
 ## Feature Representation
 
 ### Time-Frequency Representation
@@ -61,6 +67,8 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20AUC.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20SE.png)
+
+
 
 ### Gait Feature Engineering
 
@@ -77,9 +85,9 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 
 
-## Discussion
+## Findings From Three Ways of Feature Representation
 
-
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Figure%205.6.JPG)
 
 
 ## Requirements
