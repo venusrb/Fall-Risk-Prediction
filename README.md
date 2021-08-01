@@ -1,13 +1,15 @@
-# **Fall-Risk-Prediction** {font-size: 75;}
+# Fall-Risk-Prediction <font color "red"> {font-size: 75;}
+
 
 This is a repository for a fall risk prediction project. I propose a machine learning algorithm that can predict risk of fall with hig sensitivity to what an experienced geriatrician can do. This would eventually enhance the cumbersome and time-consuming process of fall risk screening currently used in clinics to detect older adults at increased risk of fall.
 
 
 # Overview
-This project includes 4 main tasks: data collection and aquisition, statistical analysis, machine learning application, and feature representation. The implemntation Python code, the **results** and conclusions of each task are disscussed and they are illustrated with some visualizations.
+This project includes 4 main tasks:
 
 - Data Collection
 
+- Statistical Analysis
 
 - Machine Learning Application
   - Data Preprocessing
@@ -19,6 +21,8 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
    - 2D Convolutional Neural Network
   - Temporal Gait Features
    - Logistic Regression
+
+The implemntation Python code, the results and conclusions of each task are disscussed and they are illustrated with some visualizations.
 
 # Data Colection
 
@@ -32,7 +36,9 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Angular%20velocity.png)
 
-# Machine Learning Application
+
+
+# [Machine Learning Application](https://www.mdpi.com/1424-8220/21/10/3481)
 .
 
 ## Data Preprocessing
@@ -58,30 +64,30 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Faller%20grad%20cam%20heatmap.JPG)
 
-![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Non-Faller%20grad%20cam%20heatmap.JPG)
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Non-faller%20grad%20cam%20heatmap.JPG)
 
-# Feature Representation
 
-## Time-Frequency Representation
-### 2D Convolutional Neural Network
+# Time-Frequency Representation
+## 2D Convolutional Neural Network
+
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20AUC.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20SE.png)
 
 
 
-## Gait Feature Engineering
+# Gait Feature Engineering
 
-### Detection of Gait Events
+## Detection of Gait Events
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection.PNG)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/gait-event-illustration.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection%20with%20illustration.PNG)
 
-### Temporal Gait Features
+## Temporal Gait Features
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-illustration.png)
 
-### Logistic Regression
+## Logistic Regression
 ...
 
 
