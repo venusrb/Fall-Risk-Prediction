@@ -1,6 +1,4 @@
-# Fall-Risk-Prediction {
-  font-size: 75;
-}
+# Fall-Risk-Prediction {font-size: 75;}
 
 This is a repository for a fall risk prediction project. I propose a machine learning algorithm that can predict risk of fall with hig sensitivity to what an experienced geriatrician can do. This would eventually enhance the cumbersome and time-consuming process of fall risk screening currently used in clinics to detect older adults at increased risk of fall.
 
