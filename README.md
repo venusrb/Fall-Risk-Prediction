@@ -82,7 +82,7 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-illustration.png)
 
 #### Logistic Regression
-
+...
 
 
 ## Findings From Three Ways of Feature Representation
