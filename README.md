@@ -63,7 +63,12 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20SE.png)
 
 ### Gait Feature Engineering
+
 #### Detection of Gait Events
+
+
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection.PNG)
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection%20with%20illustration.PNG)
 #### Temporal Gait Features
 
 
