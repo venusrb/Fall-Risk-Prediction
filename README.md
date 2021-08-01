@@ -4,7 +4,7 @@ This is a repository for a fall risk prediction project. I propose a machine lea
 
 
 ## Overview
-This project includes 4 main tasks: data collection and aquisition, statistical analysis, machine learning application, and feature representation. The implemntation Python code, the results and conclusions of each task are disscussed and they are illustrated with some visualization.
+This project includes 4 main tasks: data collection and aquisition, statistical analysis, machine learning application, and feature representation. The implemntation Python code, the results and conclusions of each task are disscussed and they are illustrated with some visualizations.
 
 - Data Collection
 
@@ -61,7 +61,12 @@ This project includes 4 main tasks: data collection and aquisition, statistical 
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20AUC.png)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20SE.png)
-### Temporal Gait Features
+
+### Gait Feature Engineering
+#### Detection of Gait Events
+#### Temporal Gait Features
+
+
 #### Logistic Regression
 
 
