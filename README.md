@@ -118,7 +118,20 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 ## Mel-spectrograms
 &nbsp;
 
-## 2D Convolutional Neural Network
+Right Foot Pitch Angular Velocity Mel-spectrogram of a Faller's TUG Test 3-second Segment
+&nbsp;
+
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Right%20gyro%20y%20melspect%20faller0.png" width="500">
+&nbsp;
+
+Right Foot Pitch Angular Velocity Mel-spectrogram of a Non-faller's TUG Test 3-second Segment
+&nbsp;
+
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Right%20gyro%20y%20melspect%20nonfaller10.png" width="500">
+&nbsp;
+
+## 2D Convolutional Neural Network Classification Results
+&nbsp;
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20AUC.png" width="500">
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20SE.png" width="500">
@@ -128,6 +141,7 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 &nbsp;
 
 ## Detection of Gait Events
+&nbsp;
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection.PNG)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/gait-event-illustration.png)
@@ -135,10 +149,12 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 &nbsp;
  
 ## Temporal Gait Features
+&nbsp;
+
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-illustration.png" width="1000">
 &nbsp;
 
-## Logistic Regression
+## Logistic Regression Results
 &nbsp;
 
  
