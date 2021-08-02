@@ -118,13 +118,12 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 ## Mel-spectrograms
 &nbsp;
 
-Right Foot Pitch Angular Velocity Mel-spectrogram of a Faller's TUG Test 3-second Segment
-&nbsp;
+### Right Foot Pitch Angular Velocity Mel-spectrogram of a Faller's TUG Test 3-second Segment Example
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Right%20gyro%20y%20melspect%20faller0.png" width="500">
 &nbsp;
 
-Right Foot Pitch Angular Velocity Mel-spectrogram of a Non-faller's TUG Test 3-second Segment
+### Right Foot Pitch Angular Velocity Mel-spectrogram of a Non-faller's TUG Test 3-second Segment Example
 &nbsp;
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Right%20gyro%20y%20melspect%20nonfaller10.png" width="500">
@@ -140,11 +139,16 @@ Right Foot Pitch Angular Velocity Mel-spectrogram of a Non-faller's TUG Test 3-s
 # Gait Feature Engineering
 &nbsp;
 
-## Detection of Gait Events
+
+### Exploring Low-pass Filterings to Select the Best Representation of Foot Pitch Angular velocity Signals
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection.PNG)
 &nbsp;
 
-![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection.PNG)
+### Finding the Timing of the Local Maximum Points of the Foot Pitch Angular velocity Magnitude
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/gait-event-illustration.png)
+&nbsp;
+
+## Detection of Gait Events
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection%20with%20illustration.PNG)
 &nbsp;
  
