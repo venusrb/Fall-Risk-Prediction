@@ -5,7 +5,7 @@ This is a repository for a fall risk prediction project. I propose a machine lea
  
 # Overview
 
-This project includes 4 main tasks:
+This project has 4 parts:
 
 - Data Collection [(paper)](https://www.mdpi.com/1424-8220/21/10/3481)
   - Population
