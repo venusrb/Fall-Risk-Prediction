@@ -66,10 +66,12 @@ For each three-directional acceleration and three-directional angular velocity s
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Back%20Gyro%20absolute%20CV.png" width="600">
 
-# [Machine Learning Application](https://www.mdpi.com/1424-8220/21/10/3481)
 
+# [Machine Learning Application](https://www.mdpi.com/1424-8220/21/10/3481)
+Machine Learning algorithms are used as a robust non-linear mathematical model to digest the complex multi-dimensional feature space of kinematics time-series of the TUG test and detect the contributing fall-risk factorsand predict risk of fall.
 &nbsp;
- 
+
+
 ## Data Preprocessing
 - [**Resampling:**](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/io.py) The raw signals are resampled from their original 250 Hz to 100 Hz.
 - [**Normalization:**](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/main.py) The Kinematics signals are normalized from their respective range to [0,1] using the minimum and maximum magnitude of acceleration and angular velocity signals across all subjects.
@@ -236,6 +238,8 @@ The [bagging of 100 bootstrapping CNNs](https://github.com/venusrb/Fall-Risk-Pre
 &nbsp;
 
 ## Logistic Regression Results
+Logistic regression with the extracted temporal features of the right and left feet can predict risk of fall with 75% sensitivity and 75% specificity. Although it cannot reach the high sensitivity as the CNN model can, it balances the sensitivity and specificity. This could help in future diagnosis studies to detect gait impairments.
+
 &nbsp;
 
  
@@ -251,7 +255,6 @@ The [bagging of 100 bootstrapping CNNs](https://github.com/venusrb/Fall-Risk-Pre
 - tensorflow>=2.0.0
 - keras
 &nbsp;
-
 
  
 # Installation
