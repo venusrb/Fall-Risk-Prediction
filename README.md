@@ -182,7 +182,7 @@ The [bagging of 100 bootstrapping CNNs](https://github.com/venusrb/Fall-Risk-Pre
  &nbsp;
 
 ## Grad CAM Visualization
-Utilizing Grad Class Activation Map technique, we can localize the gait segments that are problematic and associated with high risk of fall. [The implementation code is provided](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Grad%20CAM%20Visualization%20of%20CNN.py).
+Utilizing Grad Class Activation Map technique, we can localize the gait segments that are associated with high risk of fall. [The implementation code is provided](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Grad%20CAM%20Visualization%20of%20CNN.py). This could eventually help to the discovery of the problematic gait biomentrics that are creating the high risk of future falls and could help the clinicians to find the appropriate treatments to intervene and decrease the risk of future falls.
 
 &nbsp;
 
