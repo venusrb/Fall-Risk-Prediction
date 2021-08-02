@@ -140,15 +140,15 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 &nbsp;
 
 
-### Exploring Low-pass Filterings to Select the Best Representation of Foot Pitch Angular velocity Signals
+### Exploring Low-pass Filterings to Select the Best Representation of the Right and Left Feet Pitch Angular velocity Signals
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection.PNG)
 &nbsp;
 
-### Finding the Timing of the Local Maximum Points of the Foot Pitch Angular velocity Magnitude
+### Finding the Timing of the Local Maximum Points of the Right and Left Feet Pitch Angular velocity Magnitude
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/gait-event-illustration.png)
 &nbsp;
 
-## Detection of Gait Events
+## Detection of Gait Events - Heel-strike (HS) and Toe-off (TO)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gait-detection%20with%20illustration.PNG)
 &nbsp;
  
