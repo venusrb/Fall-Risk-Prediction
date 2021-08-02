@@ -154,6 +154,8 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 # Installation
 &nbsp;
 
+The following Python packages should be installed for performing the tasks.
+
 ```
 conda install tqdm
 conda install pandas
