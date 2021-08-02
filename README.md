@@ -85,7 +85,6 @@ To boost the sample size (in addition to signal segmentation), 100 iterations of
 The training bag of segments is used to train the ML model and the validation bag of segments is used to validate and adjust the model constantly while training. The trained model is used to predict the risk of fall for the Test bag of segments. Finally, The vote of the majority segments of a subject determines its fall-risk status.
 This process is repeated for 100 iterations and after bagging the resulted 100 models, the mean and 95% CI of the prediction metrics are used to evaluate the bagging model prediction.
 
-![image](https://user-images.githubusercontent.com/42815755/127910641-53d5c636-0a35-4114-ac33-7a617af7f23e.png)
 
 
 ## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
