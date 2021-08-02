@@ -38,6 +38,14 @@ The implemntation Python code, the results and conclusions of each task are diss
 
 &nbsp;
 
+## Statistical Analysis
+&nbsp;
+ 
+### Physiological Features
+
+
+### Kinematics statistics
+For each three-directional acceleration and three-directional angular velocity signals of neck, right and left feet sensors, mean, standard deviation and coefficient of variation (CV) are calculated. These kinematics statistics are considered as separate samples for faller/non-faller z-tests. Among all the kinematics statistics, the CV of the roll angular velocity of the neck sensor
 
 # [Machine Learning Application](https://www.mdpi.com/1424-8220/21/10/3481)
 
