@@ -5,7 +5,6 @@ This is a repository for a fall risk prediction project. I propose a machine lea
 &nbsp;
  
 # Overview
-&nbsp;
 
 This project includes 4 main tasks:
 
@@ -19,6 +18,7 @@ This project includes 4 main tasks:
 
 - Machine Learning Application [(paper)](https://www.mdpi.com/1424-8220/21/10/3481)
   - Data Preprocessing
+  - Bootstrap Resampling and Bagging
   - 1D Convolutional Neural Network (CNN)
   - Support Vector Machine (SVM)
 
@@ -28,13 +28,10 @@ This project includes 4 main tasks:
   - Temporal Gait Features
    - Logistic Regression
 
-The results and conclusions of each task are disscussed and illustrated with some visualizations.
-
-In addition, the implemntation Python code for each task is provided under [Tasks](https://github.com/venusrb/Fall-Risk-Prediction/tree/main/Tasks) folder.
+The results and conclusions of each task are disscussed and illustrated with some visualizations. In addition, the implemntation Python code for each task is provided under [Tasks](https://github.com/venusrb/Fall-Risk-Prediction/tree/main/Tasks) folder.
 
  
 # Data Colection
-&nbsp;
 
 98 patients, 65 years old and older, a diverse group of geriatric patients, participated in this study. They were evaluated with the Timed-Up-and-Go (TUG) test while three sensors were installed on their bodies (on their right and left shoes, and the collear of their clothing).
 &nbsp;
@@ -77,8 +74,11 @@ For each three-directional acceleration and three-directional angular velocity s
 
 &nbsp;
 
-## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
+## Bootstrap Resampling and Bagging
 &nbsp;
+
+## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
+
 The [CNN]() model includes:
 - Kinematics Feature Extraction: 4 building blocks of 1-D convolutional (Conv) layers, each followed by a Batch Normalization (BN) and ReLU activation, which all together extracted the signals’ high-level gait features. Additionally, Max pooling layers were used after the second and the fourth ReLU activations to downsample the similar local information into a concentrated output.
 - Fall-Risk-Classification: The feature maps of the last ReLU activation were flattened into a 1D array and then fed into a fully connected (FC) layer with a sigmoid activation function to serve as the predictor of the fall-risk probability. Then, binary classification of fallers versus non-fallers was performed using the threshold probability of 0.5. 
@@ -88,11 +88,13 @@ The [CNN]() model includes:
 &nbsp;
 
 ## Support Vector Machine
-&nbsp;
+
 A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstraping%20SVM%20-%20segmented%20signals.py) model with a linear kernel were trained with the mean, standard deviation, and coefficient of variation of the three directional signals such that in each experiment, nine statistical variables were the inputs rather than the three-channeled time series that were fed into the CNN models.
 
  
 ## Classification Results
+&nbsp;
+
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20Molde%20comparison%20(a).png)
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20Se%20comparison.png" width="500">
@@ -102,6 +104,7 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
  &nbsp;
 
 ## Grad CAM Visualization
+&nbsp;
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Faller%20grad%20cam%20heatmap.JPG)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Non-faller%20grad%20cam%20heatmap.JPG)
@@ -110,7 +113,10 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
  
 # Time-Frequency Representation
 &nbsp;
- 
+
+## Mel-spectrograms
+&nbsp;
+
 ## 2D Convolutional Neural Network
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20and%20melspect%20comparison%20-%20AUC.png" width="500">
