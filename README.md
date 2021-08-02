@@ -139,13 +139,23 @@ def CNN_model(X):
     model = keras.Model(inputs=input_layer, outputs=output_layer)
     
     return model
+    
+model = CNN_model
 ```
 &nbsp;
 
 
 ## Support Vector Machine
 
-A SVM model with a linear kernel were trained with the mean, standard deviation, and coefficient of variation of the three directional signals such that in each experiment, nine statistical variables were the inputs rather than the three-channeled time series that were fed into the CNN models.
+A SVM model with a linear kernel were trained with the mean, standard deviation, and coefficient of variation of the three directional signals such that in each experiment, nine statistical variables are the inputs rather than the three-channel time series that are fed into the CNN models.
+
+```
+from sklearn.svm import SVC
+
+model = SVC(kernel='linear')
+```
+&nbsp;
+
 
  
 ## Classification Results
