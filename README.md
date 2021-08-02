@@ -83,13 +83,13 @@ To boost the sample size (in addition to signal segmentation), 100 iterations of
 &nbsp;
 
 The training bag of segments is used to train the ML model and the validation bag of segments is used to validate and adjust the model constantly while training. The trained model is used to predict the risk of fall for the Test bag of segments. Finally, The vote of the majority segments of a subject determines its fall-risk status.
-This process is repeated for 100 iterations and after bagging the resulted 100 models, the mean and 95% CI of the prediction metrics are used to evaluate the bagging model prediction.
+This process is repeated for 100 iterations and after bagging the resulted 100 models, the mean and 95% Confidence Interval CI) of the prediction metrics are used to evaluate the bagging model prediction.
 
 
 
 ## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
 
-The [CNN]() model includes:
+The CNN model includes:
 - Kinematics Feature Extraction: 4 building blocks of 1-D convolutional (Conv) layers, each followed by a Batch Normalization (BN) and ReLU activation, which all together extracted the signals’ high-level gait features. Additionally, Max pooling layers were used after the second and the fourth ReLU activations to downsample the similar local information into a concentrated output.
 - Fall-Risk-Classification: The feature maps of the last ReLU activation were flattened into a 1D array and then fed into a fully connected (FC) layer with a sigmoid activation function to serve as the predictor of the fall-risk probability. Then, binary classification of fallers versus non-fallers was performed using the threshold probability of 0.5. 
  &nbsp;
@@ -97,12 +97,18 @@ The [CNN]() model includes:
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN-Diagram.png)
 &nbsp;
 
+### Python implementation
+
+&nbsp;
+
+
 ## Support Vector Machine
 
-A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstraping%20SVM%20-%20segmented%20signals.py) model with a linear kernel were trained with the mean, standard deviation, and coefficient of variation of the three directional signals such that in each experiment, nine statistical variables were the inputs rather than the three-channeled time series that were fed into the CNN models.
+A SVM model with a linear kernel were trained with the mean, standard deviation, and coefficient of variation of the three directional signals such that in each experiment, nine statistical variables were the inputs rather than the three-channeled time series that were fed into the CNN models.
 
  
 ## Classification Results
+The [bagging of 100 bootstrapping CNNs]() and the [bagging of 100 bootstrapping SVMs](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstraping%20SVM%20-%20segmented%20signals.py) are performed for each three-channel acceleration and three-channel angular velocity signals of each of three sensors separately and the mean and 95% CI of prediction metrics are evaluated to compare the overall peformance of the CNN and SVM models.
 &nbsp;
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20Molde%20comparison%20(a).png)
