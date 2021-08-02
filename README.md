@@ -75,8 +75,7 @@ For each three-directional acceleration and three-directional angular velocity s
 &nbsp;
 
 ## Bootstrap Resampling and Bagging
-To boost the sample size (in addition to signal segmentation), 100 iterations of bootstrap resampling is performed to estimate the prediction uncertainty due to the sample bias. In each bootstrapping iteration 98 subjects are randomly divided into Test, Validation, and Training subjects as illustrated in the follong figure. Then bootstraping resampling (with replacement) is performed for each sets of subjects for _100*_number of subjetcs in the set
-, to estimate the distribution of population.
+To boost the sample size (in addition to signal segmentation), 100 iterations of bootstrap resampling is performed to estimate the prediction uncertainty due to the sample bias. In each bootstrapping iteration 98 subjects are randomly divided into Test, Validation, and Training subjects as illustrated in the follong figure. Then bootstraping resampling (with replacement) is performed for each sets of subjects for _{100*number of subjetcs in the set}_ to built the multiply the size of Test, Validation, and Training subjects by 100 and estimate the distribution of population.
 
 &nbsp;
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Bootstrap%20Resampling.JPG">
