@@ -39,6 +39,8 @@ The results and conclusions of each task are disscussed and illustrated with som
 &nbsp;
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gender-Distribution.png" width="500">
+&nbsp;
+ 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Weight-Height-Distribution.png" width=500>  
 &nbsp;
 
@@ -75,10 +77,13 @@ For each three-directional acceleration and three-directional angular velocity s
 
 ## Bootstrap Resampling and Bagging
 To boost the sample size (in addition to signal segmentation), 100 iterations of bootstrap resampling is performed to estimate the prediction uncertainty due to the sample bias. In each bootstrapping iteration 98 subjects are randomly divided into Test, Validation, and Training subjects as illustrated in the follong figure. Then bootstraping resampling (with replacement) is performed for each sets of subjects for _100*number of subjetcs in the set_ to multiply the size of Test, Validation, and Training subjects by 100 and estimate the distribution of population. Then, Test bag of segments, Validation bag of segments, and Trainign bag of segments are built by palcing all the segments of each subject in the associated set.
+&nbsp;
 
 &nbsp;
 
+
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Bootstrap%20Resampling.JPG">
+
 &nbsp;
 
 The training bag of segments is used to train the ML model and the validation bag of segments is used to validate and adjust the model constantly while training. The trained model is used to predict the risk of fall for the Test bag of segments. Finally, The vote of the majority segments of a subject determines its fall-risk status.
