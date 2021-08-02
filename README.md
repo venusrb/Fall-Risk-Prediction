@@ -24,7 +24,8 @@ This project includes 4 main tasks:
 
 The implemntation Python code, the results and conclusions of each task are disscussed and they are illustrated with some visualizations.  
  
-# Data Colection  
+# Data Colection 
+98 patients, 65 years old and older, a diverse group of geriatric patients, participated in this study. They were evaluated with the Timed-Up-and-Go (TUG) test while three sensors were installed on their bodies (on their right and left shoes, and the collear of their clothing).
 &nbsp;
 
 ## Population
@@ -45,7 +46,7 @@ The implemntation Python code, the results and conclusions of each task are diss
 
 
 ### Kinematics statistics
-For each three-directional acceleration and three-directional angular velocity signals of neck, right and left feet sensors, mean, standard deviation and coefficient of variation (CV) are calculated. These kinematics statistics are considered as separate samples for faller/non-faller z-tests. Among all the kinematics statistics, the CV of the roll angular velocity of the neck sensor
+For each three-directional acceleration and three-directional angular velocity signals of neck, right and left feet sensors, mean, standard deviation and coefficient of variation (CV) are calculated. These kinematics statistics are considered as separate samples for faller/non-faller z-tests. Among all the kinematics statistics, the CV of the roll angular velocity of the neck sensor is found the most significant attribute in distinguishing fallers and non-fallers (p-value=0). However, as shown in the following pairplots of fallers/non-fallers' CV of roll angular velocity distributions, the difference between the mean of two groups is only 1% to 4% difference and fallers and non-fallers are not linearlly separable.
 
 # [Machine Learning Application](https://www.mdpi.com/1424-8220/21/10/3481)
 
