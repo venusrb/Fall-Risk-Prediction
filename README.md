@@ -152,6 +152,9 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 
  
 # Installation
+&nbsp;
+
+```
 conda install tqdm
 conda install pandas
 conda install scipy
@@ -159,4 +162,5 @@ conda install matplotlib
 conda install seaborn
 conda install keras
 conda install keras-vis
+```
 
