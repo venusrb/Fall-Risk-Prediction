@@ -8,6 +8,8 @@ This is a repository for a fall risk prediction project. I propose a machine lea
 This project includes 4 main tasks:
 
 - Data Collection
+  - Population
+  - Data Acquisition 
 
 - Statistical Analysis
 
@@ -22,7 +24,10 @@ This project includes 4 main tasks:
   - Temporal Gait Features
    - Logistic Regression
 
-The results and conclusions of each task are disscussed and illustrated with some visualizations. In addition, the implemntation Python code for each task is provided under [Tasks]() folder.
+The results and conclusions of each task are disscussed and illustrated with some visualizations.
+
+In addition, the implemntation Python code for each task is provided under [Tasks](https://github.com/venusrb/Fall-Risk-Prediction/tree/main/Tasks) folder.
+
  
 # Data Colection 
 98 patients, 65 years old and older, a diverse group of geriatric patients, participated in this study. They were evaluated with the Timed-Up-and-Go (TUG) test while three sensors were installed on their bodies (on their right and left shoes, and the collear of their clothing).
@@ -118,12 +123,21 @@ For each three-directional acceleration and three-directional angular velocity s
 &nbsp;
 
  
+
 # Requirements
+- Python 3.7-3.9
+- tensorflow>=2.0.0
+- keras
 &nbsp;
 
 
  
- 
 # Installation
-
+conda install tqdm
+conda install pandas
+conda install scipy
+conda install matplotlib
+conda install seaborn
+conda install keras
+conda install keras-vis
 
