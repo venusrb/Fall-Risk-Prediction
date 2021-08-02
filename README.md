@@ -159,7 +159,7 @@ model = SVC(kernel='linear')
 
  
 ## Classification Results
-The [bagging of 100 bootstrapping CNNs]() and the [bagging of 100 bootstrapping SVMs](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstraping%20SVM%20-%20segmented%20signals.py) are performed for each three-channel acceleration and three-channel angular velocity signals of each of three sensors separately and the mean and 95% CI of prediction metrics are evaluated to compare the overall peformance of the CNN and SVM models.
+The [bagging of 100 bootstrapping CNNs](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstraping%20CNN%20-%20segmented%20signals.py) and the [bagging of 100 bootstrapping SVMs](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstraping%20SVM%20-%20segmented%20signals.py) are performed for each three-channel acceleration and three-channel angular velocity signals of each of three sensors separately and the mean and 95% CI of prediction metrics are evaluated to compare the overall peformance of the CNN and SVM models.
 &nbsp;
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20Molde%20comparison%20(a).png)
