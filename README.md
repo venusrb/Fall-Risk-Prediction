@@ -75,10 +75,18 @@ For each three-directional acceleration and three-directional angular velocity s
 &nbsp;
 
 ## Bootstrap Resampling and Bagging
-To boost the sample size (in addition to signal segmentation), 100 iterations of bootstrap resampling is performed to estimate the prediction uncertainty due to the sample bias. In each bootstrapping iteration 98 subjects are randomly divided into Test, Validation, and Training subjects as illustrated in the follong figure. Then bootstraping resampling (with replacement) is performed for each sets of subjects for _{100*number of subjetcs in the set}_ to built the multiply the size of Test, Validation, and Training subjects by 100 and estimate the distribution of population.
+To boost the sample size (in addition to signal segmentation), 100 iterations of bootstrap resampling is performed to estimate the prediction uncertainty due to the sample bias. In each bootstrapping iteration 98 subjects are randomly divided into Test, Validation, and Training subjects as illustrated in the follong figure. Then bootstraping resampling (with replacement) is performed for each sets of subjects for _100*number of subjetcs in the set_ to multiply the size of Test, Validation, and Training subjects by 100 and estimate the distribution of population. Then, Test bag of segments, Validation bag of segments, and Trainign bag of segments are built by palcing all the segments of each subject in the associated set.
 
 &nbsp;
+
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Bootstrap%20Resampling.JPG">
+&nbsp;
+
+The training bag of segments is used to train the ML model and the validation bag of segments is used to validate and adjust the model constantly while training. The trained model is used to predict the risk of fall for the Test bag of segments. Finally, The vote of the majority segments of a subject determines its fall-risk status.
+This process is repeated for 100 iterations and after bagging the resulted 100 models, the mean and 95% CI of the prediction metrics are used to evaluate the bagging model prediction.
+
+![image](https://user-images.githubusercontent.com/42815755/127910641-53d5c636-0a35-4114-ac33-7a617af7f23e.png)
+
 
 ## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
 
