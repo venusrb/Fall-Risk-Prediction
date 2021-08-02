@@ -79,7 +79,7 @@ For each three-directional acceleration and three-directional angular velocity s
 
 ## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
 &nbsp;
-
+The [CNN]() model includes:
 - Kinematics Feature Extraction: 4 building blocks of 1-D convolutional (Conv) layers, each followed by a Batch Normalization (BN) and ReLU activation, which all together extracted the signals’ high-level gait features. Additionally, Max pooling layers were used after the second and the fourth ReLU activations to downsample the similar local information into a concentrated output.
 - Fall-Risk-Classification: The feature maps of the last ReLU activation were flattened into a 1D array and then fed into a fully connected (FC) layer with a sigmoid activation function to serve as the predictor of the fall-risk probability. Then, binary classification of fallers versus non-fallers was performed using the threshold probability of 0.5. 
  &nbsp;
@@ -89,7 +89,7 @@ For each three-directional acceleration and three-directional angular velocity s
 
 ## Support Vector Machine
 &nbsp;
-A [SVM] model with a linear kernel were trained with the mean, standard deviation, and coefficient of variation of the three directional signals such that in each experiment, nine statistical variables were the inputs rather than the three-channeled time series that were fed into the CNN models.
+A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstraping%20SVM%20-%20segmented%20signals.py) model with a linear kernel were trained with the mean, standard deviation, and coefficient of variation of the three directional signals such that in each experiment, nine statistical variables were the inputs rather than the three-channeled time series that were fed into the CNN models.
 
  
 ## Classification Results
