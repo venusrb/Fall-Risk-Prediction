@@ -22,7 +22,7 @@ This project includes 4 main tasks:
   - Temporal Gait Features
    - Logistic Regression
 
-The implemntation Python code, the results and conclusions of each task are disscussed and they are illustrated with some visualizations.  
+The results and conclusions of each task are disscussed and illustrated with some visualizations. In addition, the implemntation Python code for each task is provided under [Tasks]() folder.
  
 # Data Colection 
 98 patients, 65 years old and older, a diverse group of geriatric patients, participated in this study. They were evaluated with the Timed-Up-and-Go (TUG) test while three sensors were installed on their bodies (on their right and left shoes, and the collear of their clothing).
