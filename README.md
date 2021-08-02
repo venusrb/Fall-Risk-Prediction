@@ -132,9 +132,8 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 &nbsp;
 
 ## Logistic Regression
-...
-
 &nbsp;
+
  
 # Findings From Three Ways of Feature Representation
 
@@ -152,7 +151,6 @@ A [SVM](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Bootstra
 
  
 # Installation
-&nbsp;
 
 The following Python packages should be installed for performing the tasks.
 
