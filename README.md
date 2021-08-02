@@ -59,10 +59,14 @@ For each three-directional acceleration and three-directional angular velocity s
 &nbsp;
 
 ## 1D Convolutional Neural Network
-![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN-Diagram.png)
+&nbsp;
  
+![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN-Diagram.png)
+&nbsp;
+
 ## Support Vector Machine
-.
+&nbsp;
+
  
 ## Classification Results
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%20-%20Molde%20comparison%20(a).png)
@@ -77,9 +81,11 @@ For each three-directional acceleration and three-directional angular velocity s
 
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Faller%20grad%20cam%20heatmap.JPG)
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Non-faller%20grad%20cam%20heatmap.JPG)
+&nbsp;
 
  
 # Time-Frequency Representation
+&nbsp;
  
 ## 2D Convolutional Neural Network
 
