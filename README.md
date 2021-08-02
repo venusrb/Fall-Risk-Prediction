@@ -9,16 +9,18 @@ This is a repository for a fall risk prediction project. I propose a machine lea
 
 This project includes 4 main tasks:
 
-- Data Collection
+- Data Collection [(paper)](https://www.mdpi.com/1424-8220/21/10/3481)
   - Population
   - Data Acquisition 
 
 - Statistical Analysis
+  - Physiological Features
+  - Kinematics statistics 
 
 - Machine Learning Application [(paper)](https://www.mdpi.com/1424-8220/21/10/3481)
   - Data Preprocessing
-  - 1D Convolutional Neural Network
-  - Support Vector Machine
+  - 1D Convolutional Neural Network (CNN)
+  - Support Vector Machine (SVM)
 
 - Feature Representation
   - Time-Frequency Representation
@@ -68,10 +70,13 @@ For each three-directional acceleration and three-directional angular velocity s
 &nbsp;
  
 ## Data Preprocessing
+- Normalization: The Kinematics signals are normalized from their respective range to [0,1] using the minimum and maximum magnitude of acceleration and angular velocity signals across all subjects.
+- Zero-padding was used to have all the input signals in the same size. This means that the time length of a subject’s signals is increased by adding zeros to the end of the signals until all the subjects have the same length as the longest TUG test’s length.
+- Segmentation: Motion signals were cut into three-second segments using a sliding window approach. A three-second window slides over a signal with a one-second stride and creates the three-second segments until the sliding window covers the entire signal. Signal segmentation was used to enhance the performance of ML models, specifically the proposed CNN algorithm.
 
 &nbsp;
 
-## 1D Convolutional Neural Network
+## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
 &nbsp;
  
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN-Diagram.png)
