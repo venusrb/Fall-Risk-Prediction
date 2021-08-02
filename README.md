@@ -68,10 +68,11 @@ For each three-directional acceleration and three-directional angular velocity s
 &nbsp;
  
 ## Data Preprocessing
-- Normalization: The Kinematics signals are normalized from their respective range to [0,1] using the minimum and maximum magnitude of acceleration and angular velocity signals across all subjects.
-- Zero-padding was used to have all the input signals in the same size. This means that the time length of a subject’s signals is increased by adding zeros to the end of the signals until all the subjects have the same length as the longest TUG test’s length.
-- Segmentation: Motion signals were cut into three-second segments using a sliding window approach. A three-second window slides over a signal with a one-second stride and creates the three-second segments until the sliding window covers the entire signal. Signal segmentation was used to enhance the performance of ML models, specifically the proposed CNN algorithm.
-- Concatenation: Every individual participant’s segmented signals were stacked channel-wise (3 acceleration and 3 angular velocity channels). The three-channel signal segments of each sensor location were considered as the input to the prediction models.
+- [**Resampling:**](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/io.py) The raw signals are resampled from their original 250 Hz to 100 Hz.
+- [**Normalization:**](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/main.py) The Kinematics signals are normalized from their respective range to [0,1] using the minimum and maximum magnitude of acceleration and angular velocity signals across all subjects.
+- [**Zero-padding:**](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/io.py) It is used to have all the input signals in the same size. This means that the time length of a subject’s signals is increased by adding zeros to the end of the signals until all the subjects have the same length as the longest TUG test’s length.
+- [**Segmentation:**](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/io.py) Motion signals are cut into three-second segments using a sliding window approach. A three-second window slides over a signal with a one-second stride and creates the three-second segments until the sliding window covers the entire signal. Signal segmentation is used to enhance the performance of ML models, specifically the proposed CNN algorithm.
+- [**Concatenation:**](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/io.py) Every individual participant’s segmented signals are stacked channel-wise (3 acceleration and 3 angular velocity channels). The three-channel signal segments of each sensor location are considered as the input to the prediction models.
 
 &nbsp;
 
