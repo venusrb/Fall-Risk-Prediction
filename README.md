@@ -76,6 +76,7 @@ For each three-directional acceleration and three-directional angular velocity s
 
 ## Bootstrap Resampling and Bagging
 &nbsp;
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Bootstrap%20Resampling.JPG" width="600">
 
 ## 1D Convolutional Neural Network Model with the Segmented Kinematics Signals of the TUG Test
 
