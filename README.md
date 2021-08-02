@@ -5,6 +5,8 @@ This is a repository for a fall risk prediction project. I propose a machine lea
 &nbsp;
  
 # Overview
+&nbsp;
+
 This project includes 4 main tasks:
 
 - Data Collection
@@ -13,7 +15,7 @@ This project includes 4 main tasks:
 
 - Statistical Analysis
 
-- Machine Learning Application
+- Machine Learning Application [(paper)](https://www.mdpi.com/1424-8220/21/10/3481)
   - Data Preprocessing
   - 1D Convolutional Neural Network
   - Support Vector Machine
@@ -29,16 +31,22 @@ The results and conclusions of each task are disscussed and illustrated with som
 In addition, the implemntation Python code for each task is provided under [Tasks](https://github.com/venusrb/Fall-Risk-Prediction/tree/main/Tasks) folder.
 
  
-# Data Colection 
+# Data Colection
+&nbsp;
+
 98 patients, 65 years old and older, a diverse group of geriatric patients, participated in this study. They were evaluated with the Timed-Up-and-Go (TUG) test while three sensors were installed on their bodies (on their right and left shoes, and the collear of their clothing).
 &nbsp;
 
 ## Population
+&nbsp;
+
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Gender-Distribution.png" width="500">
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Weight-Height-Distribution.png" width=500>  
 &nbsp;
 
 ## Data Acquisition
+&nbsp;
+
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Acceleration.png" width="500">
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Neck%20Original%20Angular%20velocity.png" width="500">
 
@@ -48,7 +56,7 @@ In addition, the implemntation Python code for each task is provided under [Task
 &nbsp;
  
 ## Physiological Features
-
+&nbsp;
 
 ## Kinematics statistics
 For each three-directional acceleration and three-directional angular velocity signals of neck, right and left feet sensors, mean, standard deviation and coefficient of variation (CV) are calculated. These kinematics statistics are considered as separate samples for faller/non-faller z-tests. Among all the kinematics statistics, the CV of the roll angular velocity of the neck sensor is found the most significant attribute in distinguishing fallers and non-fallers (p-value=0). However, as shown in the following pairplots of fallers/non-fallers' CV of roll angular velocity distributions, the difference between the mean of two groups is only 1% to 4% difference and fallers and non-fallers are not linearlly separable.
