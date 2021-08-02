@@ -97,8 +97,49 @@ The CNN model includes:
 ![My image](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/CNN-Diagram.png)
 &nbsp;
 
-### Python implementation
+```
+import keras
 
+# Define a function to build the CNN model that receives X as a numpy input of shape (# of segments, 300, 3)
+# Note: each 3-second segment of a 100 Hz signal is equivalent to 300 timestampts of the signal
+
+def CNN_model(X):  
+
+    input_layer = keras.layers.Input(shape=(X.shape[1], X.shape[2]), name='input_vals')
+    conv_1 = keras.layers.Conv1D(64, kernel_size=5, strides=3,  padding = 'same', data_format = 'channels_last',
+                                    name='conv1')(input_layer)
+    conv_1 = keras.layers.BatchNormalization(name='conv1_Batch')(conv_1)
+    conv_1 = keras.layers.ReLU(name='conv1_relu')(conv_1)
+    conv_1 = keras.layers.Dropout(0.2)(conv_1)
+
+    conv_2 = keras.layers.Conv1D(128, kernel_size=5, strides=3, padding = 'same', data_format = 'channels_last',
+                                    name='conv2')(conv_1)
+    conv_2 = keras.layers.BatchNormalization(name='conv2_Batch')(conv_2)
+    conv_2 = keras.layers.ReLU(name='conv2_relu')(conv_2)
+    conv_2 = keras.layers.MaxPooling1D(pool_size=2, strides=2, name='conv2_pool')(conv_2)
+    conv_2 = keras.layers.Dropout(0.2)(conv_2)
+    
+    conv_3 = keras.layers.Conv1D(256, kernel_size=3, strides=3, padding = 'same', data_format = 'channels_last',
+                                    name='conv3')(conv_2)
+    conv_3 = keras.layers.BatchNormalization(name='conv3_Batch')(conv_3)
+    conv_3 = keras.layers.ReLU(name='conv3_relu')(conv_3)
+    conv_3 = keras.layers.Dropout(0.2)(conv_3)
+    
+    conv_4 = keras.layers.Conv1D(128, kernel_size=3, strides=3, padding = 'same', data_format = 'channels_last',
+                                    name='conv4')(conv_3)
+    conv_4 = keras.layers.BatchNormalization(name='conv4_Batch')(conv_4)
+    conv_4 = keras.layers.ReLU(name='conv4_relu')(conv_4)
+    conv_4 = keras.layers.MaxPooling1D(pool_size=2, strides=2, name='conv4_pool')(conv_4)
+    
+    flatten = keras.layers.Flatten(name='flatten')(conv_4)
+    fc_1 = keras.layers.Dense(1,name='fc_1')(flatten)
+    fc_1 = keras.layers.BatchNormalization(name='fc1_Batch')(fc_1)
+    
+    output_layer = keras.layers.Activation(activation='sigmoid', name='output_layer_activation')(fc_1)        
+    model = keras.Model(inputs=input_layer, outputs=output_layer)
+    
+    return model
+```
 &nbsp;
 
 
