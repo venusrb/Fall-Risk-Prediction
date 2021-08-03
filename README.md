@@ -268,6 +268,7 @@ The following Python packages should be installed for performing the tasks.
 conda install tqdm
 conda install pandas
 conda install scipy
+conda install scikit-learn
 conda install matplotlib
 conda install seaborn
 conda install keras
