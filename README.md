@@ -241,9 +241,19 @@ Utilizing Grad Class Activation Map technique, we can localize the gait segments
 &nbsp;
 
 ## Logistic Regression Results
-Logistic regression with the extracted temporal features of the right and left feet can predict risk of fall with 75% sensitivity and 75% specificity. Although it cannot reach the high sensitivity as the CNN model can, it balances the sensitivity and specificity. This could help in future diagnosis studies to detect gait impairments.
+Logistic regression with the extracted temporal features of the right and left feet can predict risk of fall with 70% sensitivity and 70% specificity. Although it cannot reach the high sensitivity as the CNN model can, it balances the sensitivity and specificity. This could help in future diagnosis studies to detect gait impairments.
 
 &nbsp;
+
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%2C%20melspect%2C%20gait%20features%20Model%20Comparison%20-%20SE.png" width="600">
+
+&nbsp;
+
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%2C%20melspect%2C%20gait%20features%20Model%20Comparison%20-%20SP.png" width="600">
+
+&nbsp;
+
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/TUG%20signals%2C%20melspect%2C%20gait%20features%20Model%20Comparison%20-%20AUC.png" width="600">
 
  
 # Findings From Three Ways of Feature Representation
