@@ -47,7 +47,7 @@ The results and conclusions of each task are disscussed and illustrated with som
 ## Location and The Orientation of Three IMU Sensors
 &nbsp;
 
-<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Sensor%20location.JPG">
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Sensor%20location.JPG" width="500">
 
 ## Data Acquisition
 &nbsp;
