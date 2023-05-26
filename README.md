@@ -65,7 +65,7 @@ Three IMU sensors were located on the subject's neck, right and left shoes, mark
 &nbsp;
  
 ## Physiological, Clinical, and Functional Test Features
-&nbsp;
+
 Some biological attributes of subjects such as BMI, their medications, diagnoses, clinical and functional test scores are faller/non-faller discriminators. This agrees with the geriatrician’s fall risk classification, which is the compilation of linear classifications using various clinical and functional fall risk evaluation tools.
 
 ## Kinematics Statistics
@@ -190,9 +190,9 @@ The [bagging of 100 bootstrapping CNNs](https://github.com/venusrb/Fall-Risk-Pre
 
 ## Grad CAM Visualization
 After training the CNN model with the segmented acceleration signals, segments of motion signals that predicted high risk of fall are visualized
-using the Grad CAM technique, with respect to the feature maps of the first convolutional layer over ten different segment inputs. [The implementation code is provided](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Grad%20CAM%20Visualization%20of%20CNN.py), and some example results are shown in the following figure. In the heatmap maped on the signals, the red to blue color spectrum represents a high risk of fall to a low risk of fall. As observed in these heatmaps, there is a gradient of changing colors over time in each segment. The first five rows are signal segments where the clinician diagnosed the participants as fallers, and the bottom five rows are the nonfaller cases. Overall, the results tend to agree with the clinician, however, it was interesting to observe non-faller cases where there were some risk patterns captured by the machine learning model. It is possible that the model captured a latent pattern that is not discernible to human eyes, which could potentially lead to the discovery of new kinematic markers for the fall risk prediction.
+using the Grad CAM technique, with respect to the feature maps of the first convolutional layer over ten different segment inputs. [The implementation code is provided](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Grad%20CAM%20Visualization%20of%20CNN.py), and some example results are shown in the following figure. In the heatmap maped on the signals, the red to blue color spectrum represents a high risk of fall to a low risk of fall. As observed in these heatmaps, there is a gradient of changing colors over time in each segment. The first five rows are signal segments where the clinician diagnosed the participants as fallers, and the bottom five rows are the nonfaller cases. Overall, the results tend to agree with the clinician, however, it was interesting to observe non-faller cases where there were some risk patterns captured by the machine learning model, marked with red dashed circles in the figure. It is possible that the model captured a latent pattern that is not discernible to human eyes, which could potentially lead to the discovery of new kinematic markers for the fall risk prediction.
 
-Utilizing Grad Class Activation Map technique, we can localize the gait segments that are associated with high risk of fall, marked with red dashed circles. This could eventually help to the discovery of the problematic gait biomentrics that are creating the high risk of future falls and could help the clinicians to find the appropriate treatments to intervene and decrease the risk of future falls.
+By utilizing Grad Class Activation Map technique, we can localize the gait segments that are associated with high risk of fall. This could eventually help to the discovery of the problematic gait biomentrics that are creating the high risk of future falls and could help the clinicians to find the appropriate treatments to intervene and decrease the risk of future falls.
 
 &nbsp;
 
