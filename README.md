@@ -64,11 +64,11 @@ Three IMU sensors were located on the subject's neck, right and left shoes, mark
 # Statistical Analysis - Faller/non-faller Group Sensitive Attributes
 &nbsp;
  
-## Physiological, Clinical, and Functional Features
+## Physiological, Clinical, and Functional Test Features
 &nbsp;
 Some biological attributes of subjects such as BMI, their medications, diagnoses, clinical and functional test scores are faller/non-faller discriminators. This agrees with the geriatrician’s fall risk classification, which is the compilation of linear classifications using various clinical and functional fall risk evaluation tools.
 
-## Kinematics statistics
+## Kinematics Statistics
 For each three-directional acceleration and three-directional angular velocity signals of neck, right and left feet sensors, mean, standard deviation and coefficient of variation (CV) are calculated. These kinematics statistics are considered as separate samples for [faller/non-faller z-tests](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Z-tests%20Faller-nonFaller%20Comparisons.py). The comprehensive analysis of faller/non-faller group sensitivity is described in [chapter 3 of my dissertation document](https://doi.org/10.17077/etd.005886). Among all the kinematics statistics, the CV of the roll angular velocity of the neck sensor is found the most significant attribute in distinguishing fallers and non-fallers (p-value=0). However, as shown in the following pairplots [(visualization code)](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Visualizing%20signals%20statistics%20-%20pairplots.py) of fallers/non-fallers' CV of roll angular velocity distributions, the difference between the mean of two groups is only 1% to 4% difference and fallers and non-fallers are not linearlly separable.
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Back%20Gyro%20absolute%20CV.png" width="600">
@@ -189,7 +189,10 @@ The [bagging of 100 bootstrapping CNNs](https://github.com/venusrb/Fall-Risk-Pre
  &nbsp;
 
 ## Grad CAM Visualization
-Utilizing Grad Class Activation Map technique, we can localize the gait segments that are associated with high risk of fall. [The implementation code is provided](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Grad%20CAM%20Visualization%20of%20CNN.py). This could eventually help to the discovery of the problematic gait biomentrics that are creating the high risk of future falls and could help the clinicians to find the appropriate treatments to intervene and decrease the risk of future falls.
+After training the CNN model with the segmented acceleration signals, segments of motion signals that predicted high risk of fall are visualized
+using the Grad CAM technique, with respect to the feature maps of the first convolutional layer over ten different segment inputs. [The implementation code is provided](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Grad%20CAM%20Visualization%20of%20CNN.py), and some example results are shown in the following figure. In the heatmap maped on the signals, the red to blue color spectrum represents a high risk of fall to a low risk of fall. As observed in these heatmaps, there is a gradient of changing colors over time in each segment. The first five rows are signal segments where the clinician diagnosed the participants as fallers, and the bottom five rows are the nonfaller cases. Overall, the results tend to agree with the clinician, however, it was interesting to observe non-faller cases where there were some risk patterns captured by the machine learning model. It is possible that the model captured a latent pattern that is not discernible to human eyes, which could potentially lead to the discovery of new kinematic markers for the fall risk prediction.
+
+Utilizing Grad Class Activation Map technique, we can localize the gait segments that are associated with high risk of fall, marked with red dashed circles. This could eventually help to the discovery of the problematic gait biomentrics that are creating the high risk of future falls and could help the clinicians to find the appropriate treatments to intervene and decrease the risk of future falls.
 
 &nbsp;
 
