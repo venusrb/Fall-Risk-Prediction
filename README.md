@@ -46,6 +46,7 @@ The results and conclusions of each task are disscussed and illustrated with som
 
 ## The Location and Orientation of Three IMU Sensors
 &nbsp;
+Three IMU sensors were located on the subject's neck, right and left shoes, marked in pink in the following figure.
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Sensor%20location.JPG" width="500">
 
@@ -60,14 +61,15 @@ The results and conclusions of each task are disscussed and illustrated with som
 
 &nbsp;
 
-# Statistical Analysis
+# Statistical Analysis - Faller/non-faller Group Sensitive Attributes
 &nbsp;
  
-## Physiological Features
+## Physiological, Clinical, and Functional Features
 &nbsp;
+Some biological attributes of subjects such as BMI, their medications, diagnoses, clinical and functional test scores are faller/non-faller discriminators. This agrees with the geriatrician’s fall risk classification, which is the compilation of linear classifications using various clinical and functional fall risk evaluation tools.
 
 ## Kinematics statistics
-For each three-directional acceleration and three-directional angular velocity signals of neck, right and left feet sensors, mean, standard deviation and coefficient of variation (CV) are calculated. These kinematics statistics are considered as separate samples for [faller/non-faller z-tests](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Z-tests%20Faller-nonFaller%20Comparisons.py). The comprehensive analysis of faller/non-faller group sensitivity is described in [my dissertation document](https://doi.org/10.17077/etd.005886). Among all the kinematics statistics, the CV of the roll angular velocity of the neck sensor is found the most significant attribute in distinguishing fallers and non-fallers (p-value=0). However, as shown in the following pairplots [(visualization code)](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Visualizing%20signals%20statistics%20-%20pairplots.py) of fallers/non-fallers' CV of roll angular velocity distributions, the difference between the mean of two groups is only 1% to 4% difference and fallers and non-fallers are not linearlly separable.
+For each three-directional acceleration and three-directional angular velocity signals of neck, right and left feet sensors, mean, standard deviation and coefficient of variation (CV) are calculated. These kinematics statistics are considered as separate samples for [faller/non-faller z-tests](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Z-tests%20Faller-nonFaller%20Comparisons.py). The comprehensive analysis of faller/non-faller group sensitivity is described in [chapter 3 of my dissertation document](https://doi.org/10.17077/etd.005886). Among all the kinematics statistics, the CV of the roll angular velocity of the neck sensor is found the most significant attribute in distinguishing fallers and non-fallers (p-value=0). However, as shown in the following pairplots [(visualization code)](https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Tasks/Visualizing%20signals%20statistics%20-%20pairplots.py) of fallers/non-fallers' CV of roll angular velocity distributions, the difference between the mean of two groups is only 1% to 4% difference and fallers and non-fallers are not linearlly separable.
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Back%20Gyro%20absolute%20CV.png" width="600">
 
