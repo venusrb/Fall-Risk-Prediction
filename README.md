@@ -32,7 +32,7 @@ The results and conclusions of each task are disscussed and illustrated with som
  
 # Data Colection
 
-98 patients, 65 years old and older, a diverse group of geriatric patients, participated in this study. They were evaluated with the Timed-Up-and-Go (TUG) test while three sensors were installed on their bodies (on their right and left shoes, and the collear of their clothing).
+98 patients, 65 years old and older, a diverse group of geriatric patients, participated in this study. They were evaluated with the Timed-Up-and-Go (TUG) test while three IMU sensors were installed on their bodies (on their right and left shoes, and the collear of their clothing).
 &nbsp;
 
 ## Population
@@ -43,6 +43,11 @@ The results and conclusions of each task are disscussed and illustrated with som
  
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Weight-Height-Distribution.png" width=500>  
 &nbsp;
+
+## Location and The Orientation of Three IMU Sensors
+&nbsp;
+
+<img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Sensor%20location.JPG">
 
 ## Data Acquisition
 &nbsp;
