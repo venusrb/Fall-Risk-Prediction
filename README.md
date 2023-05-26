@@ -46,7 +46,7 @@ The results and conclusions of each task are disscussed and illustrated with som
 
 ## The Location and Orientation of Three IMU Sensors
 &nbsp;
-Three IMU sensors were located on the subject's neck, right and left shoes, marked in pink in the following figure.
+Three IMU sensors were located on the subject's neck, right and left shoes, marked in pink in the following figure. The gait signals are collected from all the sensors while the subjects perfom a functional test called Timed Up and Go (TUG) test.
 
 <img src="https://github.com/venusrb/Fall-Risk-Prediction/blob/main/Figures/Sensor%20location.JPG" width="500">
 
